@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora Média de Notas</title>
+    <meta name="description" content="Calculadora Média de Notas" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora de Média de Notas</h1>
+        <form id="formNotas">
+            <ul id="notas">
+                <li>
+                    <label for="nota1">Nota 1</label>
+                    <input type="text" id="nota1" class="nota" placeholder="Nota 1" aria-label="Nota 1">
+                </li>
+                <li>
+                    <label for="nota2">Nota 2</label>
+                    <input type="text" id="nota2" class="nota" placeholder="Nota 2" aria-label="Nota 2">
+                </li>
+                <li>
+                    <label for="nota3">Nota 3</label>
+                    <input type="text" id="nota3" class="nota" placeholder="Nota 3" aria-label="Nota 3">
+                </li>
+                <li>
+                    <label for="nota4">Nota 4</label>
+                    <input type="text" id="nota4" class="nota" placeholder="Nota 4" aria-label="Nota 4">
+                </li>
+                <li>
+                    <label for="nota5">Nota 5</label>
+                    <input type="text" id="nota5" class="nota" placeholder="Nota 5" aria-label="Nota 5">
+                </li>
+            </ul>
+            <button type="button" onclick="calcularMedia()">Calcular Média</button>
+        </form>
+        <p id="resultado"></p>
+    </div>
+    <footer>
+        <p>Desenvolvido por Priscilla Trevizan para o curso Descodificadas ❤</p>  
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
