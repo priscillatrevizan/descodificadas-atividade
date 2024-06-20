@@ -15,7 +15,7 @@ function calcularMedia() {
     }
   });
 
-  const resultadoElement = document.getElementById("resultado");
+  const resultadoElement = document.getElementById("resultadoNotas");
 
   if (campoVazio) {
     resultadoElement.innerText = "Por favor, preencha todos os campos.";
@@ -37,5 +37,46 @@ function calcularMedia() {
     }
 
     resultadoElement.innerText = mensagem;
+  }
+}
+
+function conferirIdade() {
+  const idade = document.getElementById("idade").value;
+  const resultadoIdade = document.getElementById("resultadoIdade");
+
+  if (idade >= 18) {
+    resultadoIdade.innerText = "Você é maior de idade.";
+    resultadoIdade.className = "mensagem sucesso";
+  } else {
+    resultadoIdade.innerText = "Você é menor de idade.";
+    resultadoIdade.className = "mensagem alerta";
+  }
+}
+
+function descobrirMes() {
+  const mes = parseInt(document.getElementById("mes").value, 10);
+  const resultadoMes = document.getElementById("resultadoMes");
+
+  const meses = [
+    "Janeiro",
+    "Fevereiro",
+    "Março",
+    "Abril",
+    "Maio",
+    "Junho",
+    "Julho",
+    "Agosto",
+    "Setembro",
+    "Outubro",
+    "Novembro",
+    "Dezembro",
+  ];
+
+  if (mes >= 1 && mes <= 12) {
+    resultadoMes.innerText = `O mês é ${meses[mes - 1]}.`;
+    resultadoMes.className = "mensagem";
+  } else {
+    resultadoMes.innerText = "Mês inválido.";
+    resultadoMes.className = "mensagem erro";
   }
 }

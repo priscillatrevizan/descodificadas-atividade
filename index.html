@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,10 +9,12 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
-    <div class="container">
+    <div class="container-notas">
         <h1>Calculadora de Média de Notas</h1>
         <form id="formNotas">
             <ul id="notas">
@@ -27,22 +30,32 @@
                     <label for="nota3">Nota 3</label>
                     <input type="text" id="nota3" class="nota" placeholder="Nota 3" aria-label="Nota 3">
                 </li>
-                <li>
-                    <label for="nota4">Nota 4</label>
-                    <input type="text" id="nota4" class="nota" placeholder="Nota 4" aria-label="Nota 4">
-                </li>
-                <li>
-                    <label for="nota5">Nota 5</label>
-                    <input type="text" id="nota5" class="nota" placeholder="Nota 5" aria-label="Nota 5">
-                </li>
             </ul>
             <button type="button" onclick="calcularMedia()">Calcular Média</button>
         </form>
-        <p id="resultado"></p>
+        <p id="resultadoNotas"></p>
     </div>
+
+    <div class="container-idade">
+        <h1>Maioridade</h1>
+        <label for="idade">Informe sua idade:</label>
+        <input type="text" id="idade" class="idade" placeholder="Informe sua idade em anos" aria-label="Idade">
+        <button type="button" onclick="conferirIdade()">Verificar Idade</button>
+        <p id="resultadoIdade"></p>
+    </div>
+
+    <div class="container-mes">
+        <h1>Descubra o mês</h1>
+        <label>Informe um número e descubra o mês correspondente à ele:</label>
+        <input type="text" id="mes" class="mes" placeholder="mes" aria-label="Mes">
+        <button type="button" onclick="descobrirMes()">Descobrir Mês</button>
+        <p id="resultadoMes"></p>
+    </div>
+
     <footer>
-        <p>Desenvolvido por Priscilla Trevizan para o curso Descodificadas ❤</p>  
+        <p>Desenvolvido por Priscilla Trevizan para o curso Descodificadas ❤</p>
     </footer>
     <script src="index.js"></script>
 </body>
+
 </html>
